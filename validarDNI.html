@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobar DNI</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main>
+        <section class="main-container">
+            <section class="web-indications">
+                <h1>Comprueba tu DNI</h1>
+                <h2>Aquí puedes comprobar DNI españoles de acuerdo con la normativa vigente.</h2>
+                <p>Introduce número y la letra al final: </p>
+            </section>
+
+            <section class="form">
+                <form>
+                    <p><input class="my-dni" type="text" name = "dni" placeholder="DNI" maxlength="9" required></input></p>
+                    <p><button class="my-button">Comprobar</button></p>
+                </form>
+                <div class="correct">
+                    <p>El DNI introducido ES correcto.</p>
+
+                </div>
+                <div class="incorrect">
+
+                    <p>El DNI introducido NO es correcto.</p>
+
+                </div>
+
+                <div class="characters-missing"> 
+
+                    <p>El DNI no es correcto. Tiene que tener 9 caracteres: 8 números y una letra al final.</p>
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+
+    <script src="./validarDNIjavaScript/validarDNI.js">
+    </script>
+</body>
+</html>

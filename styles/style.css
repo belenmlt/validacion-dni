@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.png");
+    font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 0.2 vw;
+    line-height: 5vw;
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        ". . ."
+        "indications indications indications"
+        "form form form" 
+        ". . .";
+}
+
+.web-indications {
+    grid-area: indications;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.form {
+    grid-area: form;
+    text-align: center;
+}
+
+.my-button {
+
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+    display: none;   
+    background-color: white; 
+ 
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+    display: none;  
+    background-color: white; 
+  
+}
+
+.characters-missing {
+    color: red;
+    font-weight: bold;
+    display: none;   
+    background-color: white; 
+}
